@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('Email',255);
             $table->string('NamaLengkap',255);
             $table->text('Alamat');
+            $table->enum('level',['Admin','Petugas']);
             $table->timestamps();
             $table->primary('AdminID');
         });

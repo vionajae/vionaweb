@@ -20,11 +20,12 @@ class AdminController extends Controller
             'Password'=>'required|min:3',
             'Email'=>'required|min:6',
             'NamaLengkap'=>'required|max:13',
-            'Alamat'=>'required|max:50'
+            'Alamat'=>'required|max:50',
+            'level'=>'required|max:50'
         ]);
         $m->create($request->all());
         if ($m->where('Username',$request->input('Username'))->where('Password',$request->input('Password'))->exists()){
-        return view('index');
+        return redirect('datapetugas');
         }
         return back()->with('pesan','registrasi gagal');
     }
@@ -146,4 +147,31 @@ class AdminController extends Controller
         return back();
     }
     
+    public function tambahRelasi()
+    {
+        return view('tambahrelasi');
+    }
+    public function cektambahrelasi(Request $request){
+        $cek = $request->validate([
+            'BukuID'=>'required',
+            'KategoriID'=>'required'
+        ]);
+        $m = new Kategoribuku_relasi();
+        $m->create($request->all());
+        return redirect('relasi');
+    }
+
+    public function dataRelasi(){
+        $m = new Kategoribuku_relasi();
+        return view('relasi',['data'=>$m->all()]);
+    }
+    public function cekdatarelasi(Request $request){
+        $m = new Kategoribuku_relasi();
+        $cek = $request->validate([
+            'BukuID'=>'required',
+            'KategoriID'=>'required'
+        ]);
+        $m->create($request->all());
+        return back();
+    }
 }

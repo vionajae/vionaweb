@@ -129,7 +129,7 @@
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Chat">Register Petugas</div>
+                <div data-i18n="Chat">Tambah Admin</div>
               </a>
             </li>
             <!-- Apps -->
@@ -214,7 +214,7 @@
               
               <hr class="my-5" />
               
-              <form action="{{'datarelasi'}}" method="post">
+              <form action="{{'kategori'}}" method="post">
               <!-- Bordered Table -->
               <div class="card">
                 <div class="demo-inline-spacing d-flex justify-content-end mx-2">

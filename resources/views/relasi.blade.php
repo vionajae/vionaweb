@@ -12,8 +12,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Tambah Admin</title>
-
+    <title>Kategori Buku Relasi</title>
+ 
     <meta name="description" content="" />
 
     <!-- Favicon -->
@@ -112,7 +112,6 @@
             </a>
           </div>
 
-          
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
@@ -124,7 +123,7 @@
               </a>
             </li>
             <!-- Apps -->
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a
                 href="{{url('register')}}"
                 target="_blank"
@@ -142,7 +141,8 @@
                 <i class="menu-icon tf-icons bx bx-book"></i>
                 <div data-i18n="Chat">Data Buku</div>
               </a>
-            <li class="menu-item">
+            </li>
+            <li class="menu-item active open">
               <a
                 href="{{url('kategori')}}"
                 target="_blank"
@@ -210,71 +210,67 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-
-              <!-- Basic Layout & Basic with Icons -->
+              <h4 class="py-3 mb-4"><span class="text-muted fw-light">Tabel / </span> Data Kategori Buku Relasi </h4>
               
-              <form action="{{url('register')}}" method="post">
-                @csrf
-                @if (session('pesan'))
-                    <div class="alert alert-danger" role="alert">
-                        {{session('pesan')}}
-                      </div>
-                    @endif
-                    {{-- pesan jika validasi gagal --}}
-                    @if ($errors->any())
-                    <div class="alert alert-success" role="alert">
-                        Gagal registrasi
-                      </div>
-                    @endif
-                <div class="mb-3">
-                  <label for="Username" class="form-label">Username</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Username"
-                    name="Username"
-                    placeholder="Username"
-                    autofocus />
+              <hr class="my-5" />
+              
+              <form action="{{'relasi'}}" method="post">
+              <!-- Bordered Table -->
+              <div class="card">
+                <div class="demo-inline-spacing d-flex justify-content-end mx-2">
+                  <a class="btn btn-primary" href="{{url('tambahrelasi')}}"  role="button">Tambah</a>
                 </div>
-                <div class="mb-3 form-password-toggle">
-                  <label class="form-label" for="password">Password</label>
-                  <div class="input-group input-group-merge">
-                    <input
-                      type="password"
-                      id="Password"
-                      class="form-control"
-                      name="Password"
-                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                      aria-describedby="Password" />
-                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                <div class="card-body">
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Buku ID</th>
+                          <th>Kategori ID</th>
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          
+                          @foreach ($data as $inem)
+                          <tr>
+                            <td>{{$inem->KategoriID}}</td>
+                              <td>{{$inem->NamaKategori}}</td>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    type="button"
+                                    class="btn p-0 dropdown-toggle hide-arrow"
+                                    data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <a href="{{url('editkategori/'.$inem->KategoriID)}}" class="dropdown-item"
+                                      ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                                    >
+                                    <a href="{{url('hapuskategori/'.$inem->KategoriID)}}" class="dropdown-item"
+                                      ><i class="bx bx-trash me-1"></i> Delete</a
+                                    >
+                                  </div>
+                                </div>
+                              </td>
+                          </tr>
+                          @endforeach
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div class="mb-3">
-                  <label for="Email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" />
-                </div>
-                <div class="mb-3">
-                  <label for="NamaLengkap" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="NamaLengkap" name="NamaLengkap" placeholder="Nama Lengkap" />
-                </div>
-                <div class="mb-3">
-                  <label for="Alamat" class="form-label">Alamat</label>
-                 <textarea class="form-control" id="Alamat" name="Alamat" placeholder="Alamat" cols="30" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                  <label for="" class="col-form-label col-2">Level</label>
-                    <div class="mb-3">
-                      <select class="form-select" id="validationCustom04" name="level" required>
-                        <option value="admin">Admin</option>
-                        <option value="petugas">Petugas</option>
-                      </select>
-                    </div>
-                </div>
-                <button class="btn btn-primary d-grid w-100">Register</button>
-              </form><br>
-            </div>
-          </div>
-          <!-- Register Card -->
+              </div>
+              <!--/ Bordered Table -->
+              </form>
+              
+
+              
+
+            
+
             <div class="content-backdrop fade"></div>
           </div>
           <!-- Content wrapper -->
@@ -310,4 +306,3 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
-

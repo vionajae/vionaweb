@@ -42,3 +42,8 @@ Route::post('kategori',[AdminController::class,'cekdatakategori']);
 Route::get('editkategori/{id}',[AdminController::class,'editKategori']);
 Route::post('editkategori/{id}',[AdminController::class,'cekeditkategori']);
 Route::get('hapuskategori/{id}',[AdminController::class,'hapuskategori']);
+
+Route::get('tambahrelasi',[AdminController::class,'tambahRelasi']);
+Route::post('tambahrelasi',[AdminController::class,'cektambahrelasi']);
+Route::get('relasi',[AdminController::class,'dataRelasi']);
+Route::post('relasi',[AdminController::class,'cekdatarelasi']);

@@ -130,7 +130,7 @@
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Chat">Register Petugas</div>
+                <div data-i18n="Chat">Tambah Admin</div>
               </a>
             </li>
 
@@ -214,54 +214,91 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 order-1">
+                <div class="col-lg-9 col-md-9 order-1">
                   <div class="row">
                     <div class="col-lg-3 col-md-12 col-3 mb-4">
                       <div class="card">
                         <div class="card" style="width: 12rem;">
                           <div class="card-body">
-                            <h5 class="card-title text-center">SEPTIHAN</h5>
-                            <img src="/assets/img/septihan.jpeg" class="card-img-top" alt="" width="10px" height="150px">
+                            <h5 class="card-title text-center">GALAKSI</h5>
+                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="col-lg-3 col-md-12 col-3 mb-4">
+                      <div class="card">
+                        <div class="card" style="width: 12rem;">
+                          <div class="card-body">
+                            <h5 class="card-title text-center">GALAKSI</h5>
+                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          </div>
+                        </div>
+                      </div>
                   </div>
+                  <div class="col-lg-3 col-md-12 col-3 mb-4">
+                    <div class="card">
+                      <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">GALAKSI</h5>
+                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-3 mb-4">
+                  <div class="card">
+                    <div class="card" style="width: 12rem;">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">GALAKSI</h5>
+                        <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-3 mb-4">
+                      <div class="card">
+                        <div class="card" style="width: 12rem;">
+                          <div class="card-body">
+                            <h5 class="card-title text-center">GALAKSI</h5>
+                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-3 mb-4">
+                    <div class="card">
+                      <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">GALAKSI</h5>
+                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-3 mb-4">
+                      <div class="card">
+                        <div class="card" style="width: 12rem;">
+                          <div class="card-body">
+                            <h5 class="card-title text-center">GALAKSI</h5>
+                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-3 mb-4">
+                    <div class="card">
+                      <div class="card" style="width: 12rem;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">GALAKSI</h5>
+                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
-
-                <div class="col-lg-4 col-md-4 order-1">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12 col-3 mb-4">
-                      <div class="card">
-                        <div class="card" style="width: 12rem;">
-                          <div class="card-body">
-                            <h5 class="card-title text-center">GALAKSI</h5>
-                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 order-1">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12 col-3 mb-4">
-                      <div class="card">
-                        <div class="card" style="width: 12rem;">
-                          <div class="card-body">
-                            <h5 class="card-title text-center">GALAKSI</h5>
-                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
             </div>
+          </div>
             
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

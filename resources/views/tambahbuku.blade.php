@@ -130,7 +130,7 @@
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Chat">Register Petugas</div>
+                <div data-i18n="Chat">Tambah Admin</div>
               </a>
             </li>
             <!-- Apps -->
