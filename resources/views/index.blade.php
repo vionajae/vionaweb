@@ -126,11 +126,11 @@
             <!-- Apps -->
             <li class="menu-item">
               <a
-                href="{{url('register')}}"
+                href="{{url('dataadmin')}}"
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Chat">Tambah Admin</div>
+                <div data-i18n="Chat">Data Admin</div>
               </a>
             </li>
 
@@ -230,8 +230,8 @@
                       <div class="card">
                         <div class="card" style="width: 12rem;">
                           <div class="card-body">
-                            <h5 class="card-title text-center">GALAKSI</h5>
-                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                            <h5 class="card-title text-center">SEPTIHAN</h5>
+                            <img src="/assets/img/septihan.jpeg" class="card-img-top" alt="" width="10px" height="150px">
                           </div>
                         </div>
                       </div>
@@ -240,8 +240,8 @@
                     <div class="card">
                       <div class="card" style="width: 12rem;">
                         <div class="card-body">
-                          <h5 class="card-title text-center">GALAKSI</h5>
-                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          <h5 class="card-title text-center">AMBERLEY</h5>
+                          <img src="/assets/img/AM.jpg" class="card-img-top" alt="" width="10px" height="150px">
                         </div>
                       </div>
                     </div>
@@ -250,8 +250,8 @@
                   <div class="card">
                     <div class="card" style="width: 12rem;">
                       <div class="card-body">
-                        <h5 class="card-title text-center">GALAKSI</h5>
-                        <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                        <h5 class="card-title text-center">ECCEDENTESIAST</h5>
+                        <img src="/assets/img/anva.jpg" class="card-img-top" alt="" width="10px" height="126px">
                       </div>
                     </div>
                   </div>
@@ -260,8 +260,8 @@
                       <div class="card">
                         <div class="card" style="width: 12rem;">
                           <div class="card-body">
-                            <h5 class="card-title text-center">GALAKSI</h5>
-                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                            <h5 class="card-title text-center">LEIDEN</h5>
+                            <img src="/assets/img/lei.jpg" class="card-img-top" alt="" width="10px" height="150px">
                           </div>
                         </div>
                       </div>
@@ -270,8 +270,8 @@
                     <div class="card">
                       <div class="card" style="width: 12rem;">
                         <div class="card-body">
-                          <h5 class="card-title text-center">GALAKSI</h5>
-                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          <h5 class="card-title text-center">SAMUEL</h5>
+                          <img src="/assets/img/sam.jpg" class="card-img-top" alt="" width="10px" height="150px">
                         </div>
                       </div>
                     </div>
@@ -280,8 +280,8 @@
                       <div class="card">
                         <div class="card" style="width: 12rem;">
                           <div class="card-body">
-                            <h5 class="card-title text-center">GALAKSI</h5>
-                            <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                            <h5 class="card-title text-center">RAZELLA</h5>
+                            <img src="/assets/img/ra.jpg" class="card-img-top" alt="" width="10px" height="150px">
                           </div>
                         </div>
                       </div>
@@ -290,8 +290,8 @@
                     <div class="card">
                       <div class="card" style="width: 12rem;">
                         <div class="card-body">
-                          <h5 class="card-title text-center">GALAKSI</h5>
-                          <img src="/assets/img/galaksi.jpg" class="card-img-top" alt="" width="10px" height="150px">
+                          <h5 class="card-title text-center">OSCILLATE</h5>
+                          <img src="/assets/img/os.jpg" class="card-img-top" alt="" width="10px" height="150px">
                         </div>
                       </div>
                     </div>

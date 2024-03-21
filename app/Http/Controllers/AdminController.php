@@ -25,9 +25,26 @@ class AdminController extends Controller
         ]);
         $m->create($request->all());
         if ($m->where('Username',$request->input('Username'))->where('Password',$request->input('Password'))->exists()){
-        return redirect('datapetugas');
+        return redirect('dataadmin');
         }
         return back()->with('pesan','registrasi gagal');
+    }
+    public function dataAdmin(){
+        $m = new Admin();
+        return view('dataadmin',['data'=>$m->all()]);
+    }
+    public function cekdataadmin(Request $request){
+        $m = new Admin();
+        $cek = $request->validate([
+            'Username'=>'required',
+            'Password'=>'required',
+            'Email'=>'required',
+            'NamaLengkap'=>'required',
+            'Alamat'=>'required',
+            'level'=>'required'
+        ]);
+        $m->create($request->all());
+        return back();
     }
 
     public function adminlogin(){
@@ -41,6 +58,32 @@ class AdminController extends Controller
          return redirect('index');
         }
         return back()->with('pesan','username dan password belum terdaftar kakak');
+    }
+
+    public function editAdmin($id){
+        $m = new Admin();
+        return view('editadmin',['data'=>$m->find($id)]);
+    }
+
+    public function cekeditadmin(Request $request,$id){
+        $validasi = $request->validate([
+            'Username'=>'required',
+            'Password'=>'required',
+            'Email'=>'required',
+            'NamaLengkap'=>'required',
+            'Alamat'=>'required',
+            'level'=>'required'
+        ]);
+
+        $admin = new Admin();
+        $admin = $admin->find($id)->update($request->all());
+        return redirect('dataadmin');
+    }
+    public function hapusadmin($AdminID){ 
+        $admin = new Admin(); 
+        $admin = $admin->find($AdminID); 
+        $admin->delete(); 
+        return back();
     }
 
     public function tambahBuku()
@@ -91,7 +134,8 @@ class AdminController extends Controller
         $buku = $buku->find($id)->update($request->all());
         return redirect('databuku');
     }
-    public function hapus($BukuID){ 
+
+    public function hapusbuku($BukuID){ 
         $buku = new Buku(); 
         $buku = $buku->find($BukuID); 
         $buku->delete(); 

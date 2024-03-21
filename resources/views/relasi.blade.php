@@ -125,11 +125,11 @@
             <!-- Apps -->
             <li class="menu-item">
               <a
-                href="{{url('register')}}"
+                href="{{url('dataadmin')}}"
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Chat">Tambah Admin</div>
+                <div data-i18n="Chat">Data Admin</div>
               </a>
             </li>
             <!-- Apps -->
